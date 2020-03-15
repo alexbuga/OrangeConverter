@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3392B51EC650CB96E391E211 /* Pods_OrangeConverterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A5D7FFD612C7F27104E635 /* Pods_OrangeConverterTests.framework */; };
 		4363DAB7241D450100B878BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAB6241D450100B878BD /* AppDelegate.swift */; };
 		4363DAB9241D450100B878BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAB8241D450100B878BD /* SceneDelegate.swift */; };
 		4363DABB241D450100B878BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DABA241D450100B878BD /* ViewController.swift */; };
@@ -14,6 +15,19 @@
 		4363DAC0241D450300B878BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4363DABF241D450300B878BD /* Assets.xcassets */; };
 		4363DAC3241D450300B878BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4363DAC1241D450300B878BD /* LaunchScreen.storyboard */; };
 		4363DACE241D450300B878BD /* OrangeConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DACD241D450300B878BD /* OrangeConverterTests.swift */; };
+		4363DADA241E8FB600B878BD /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAD9241E8FB600B878BD /* CurrencyService.swift */; };
+		4363DADB241E8FBB00B878BD /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAD9241E8FB600B878BD /* CurrencyService.swift */; };
+		4363DADE241E964F00B878BD /* Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DADD241E964F00B878BD /* Completion.swift */; };
+		4363DAE0241E9D9600B878BD /* CurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DADF241E9D9600B878BD /* CurrencyRate.swift */; };
+		4363DAE4241EBDF600B878BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAE3241EBDF600B878BD /* Extensions.swift */; };
+		4363DAE6241EBF1B00B878BD /* GenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAE5241EBF1B00B878BD /* GenericDataSource.swift */; };
+		4363DAE8241EC15300B878BD /* CurrencyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAE7241EC15300B878BD /* CurrencyDataSource.swift */; };
+		4363DAEB241EC5E600B878BD /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAEA241EC5E600B878BD /* CurrencyViewModel.swift */; };
+		4363DAEF241ECD3D00B878BD /* CurrencyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAEE241ECD3D00B878BD /* CurrencyCellViewModel.swift */; };
+		4363DAF0241ECD3D00B878BD /* CurrencyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAEE241ECD3D00B878BD /* CurrencyCellViewModel.swift */; };
+		4363DAF3241ECEF900B878BD /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAF2241ECEF900B878BD /* CurrencyCell.swift */; };
+		4363DAF4241ECEF900B878BD /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAF2241ECEF900B878BD /* CurrencyCell.swift */; };
+		FC35D22DD5EE2FEB83FAE8AC /* Pods_OrangeConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD340DFC743D18AFA1E9C4A /* Pods_OrangeConverter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01006C731467E66ECA6526B5 /* Pods-OrangeConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeConverter.debug.xcconfig"; path = "Target Support Files/Pods-OrangeConverter/Pods-OrangeConverter.debug.xcconfig"; sourceTree = "<group>"; };
+		2BD340DFC743D18AFA1E9C4A /* Pods_OrangeConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE4697BB0432FD7FE9CE84B /* Pods-OrangeConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeConverter.release.xcconfig"; path = "Target Support Files/Pods-OrangeConverter/Pods-OrangeConverter.release.xcconfig"; sourceTree = "<group>"; };
 		4363DAB3241D450100B878BD /* OrangeConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4363DAB6241D450100B878BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4363DAB8241D450100B878BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +55,19 @@
 		4363DAC9241D450300B878BD /* OrangeConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrangeConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4363DACD241D450300B878BD /* OrangeConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeConverterTests.swift; sourceTree = "<group>"; };
 		4363DACF241D450300B878BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4363DAD9241E8FB600B878BD /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		4363DADD241E964F00B878BD /* Completion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Completion.swift; sourceTree = "<group>"; };
+		4363DADF241E9D9600B878BD /* CurrencyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRate.swift; sourceTree = "<group>"; };
+		4363DAE1241EB92A00B878BD /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4363DAE3241EBDF600B878BD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4363DAE5241EBF1B00B878BD /* GenericDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataSource.swift; sourceTree = "<group>"; };
+		4363DAE7241EC15300B878BD /* CurrencyDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDataSource.swift; sourceTree = "<group>"; };
+		4363DAEA241EC5E600B878BD /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		4363DAEE241ECD3D00B878BD /* CurrencyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCellViewModel.swift; sourceTree = "<group>"; };
+		4363DAF2241ECEF900B878BD /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		50245CB3A1EAB471BE4D4FBC /* Pods-OrangeConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeConverterTests.release.xcconfig"; path = "Target Support Files/Pods-OrangeConverterTests/Pods-OrangeConverterTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4D0FCFB42E8D7B67E62A2D9 /* Pods-OrangeConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeConverterTests.debug.xcconfig"; path = "Target Support Files/Pods-OrangeConverterTests/Pods-OrangeConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4A5D7FFD612C7F27104E635 /* Pods_OrangeConverterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeConverterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC35D22DD5EE2FEB83FAE8AC /* Pods_OrangeConverter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +83,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3392B51EC650CB96E391E211 /* Pods_OrangeConverterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11CDF2754F37E2B7057429AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BD340DFC743D18AFA1E9C4A /* Pods_OrangeConverter.framework */,
+				E4A5D7FFD612C7F27104E635 /* Pods_OrangeConverterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4363DAAA241D450100B878BD = {
 			isa = PBXGroup;
 			children = (
 				4363DAB5241D450100B878BD /* OrangeConverter */,
 				4363DACC241D450300B878BD /* OrangeConverterTests */,
 				4363DAB4241D450100B878BD /* Products */,
+				BDB963BADBE4EFEDD508E05E /* Pods */,
+				11CDF2754F37E2B7057429AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,12 +123,17 @@
 			isa = PBXGroup;
 			children = (
 				4363DAB6241D450100B878BD /* AppDelegate.swift */,
-				4363DAB8241D450100B878BD /* SceneDelegate.swift */,
-				4363DABA241D450100B878BD /* ViewController.swift */,
-				4363DABC241D450100B878BD /* Main.storyboard */,
 				4363DABF241D450300B878BD /* Assets.xcassets */,
-				4363DAC1241D450300B878BD /* LaunchScreen.storyboard */,
+				4363DAEC241ECB4800B878BD /* Controllers */,
+				4363DAE2241EBDE800B878BD /* Helpers */,
 				4363DAC4241D450300B878BD /* Info.plist */,
+				4363DADC241E953D00B878BD /* Models */,
+				4363DAE1241EB92A00B878BD /* MyPlayground.playground */,
+				4363DAB8241D450100B878BD /* SceneDelegate.swift */,
+				4363DAD8241E8F9800B878BD /* Services */,
+				4363DAED241ECB5E00B878BD /* Storyboards */,
+				4363DAE9241EC5D300B878BD /* ViewModels */,
+				4363DAF1241ECED800B878BD /* Views */,
 			);
 			path = OrangeConverter;
 			sourceTree = "<group>";
@@ -99,6 +147,78 @@
 			path = OrangeConverterTests;
 			sourceTree = "<group>";
 		};
+		4363DAD8241E8F9800B878BD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4363DAD9241E8FB600B878BD /* CurrencyService.swift */,
+				4363DADD241E964F00B878BD /* Completion.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4363DADC241E953D00B878BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4363DADF241E9D9600B878BD /* CurrencyRate.swift */,
+				4363DAE5241EBF1B00B878BD /* GenericDataSource.swift */,
+				4363DAE7241EC15300B878BD /* CurrencyDataSource.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4363DAE2241EBDE800B878BD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4363DAE3241EBDF600B878BD /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4363DAE9241EC5D300B878BD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4363DAEA241EC5E600B878BD /* CurrencyViewModel.swift */,
+				4363DAEE241ECD3D00B878BD /* CurrencyCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4363DAEC241ECB4800B878BD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4363DABA241D450100B878BD /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4363DAED241ECB5E00B878BD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4363DAC1241D450300B878BD /* LaunchScreen.storyboard */,
+				4363DABC241D450100B878BD /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4363DAF1241ECED800B878BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4363DAF2241ECEF900B878BD /* CurrencyCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BDB963BADBE4EFEDD508E05E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01006C731467E66ECA6526B5 /* Pods-OrangeConverter.debug.xcconfig */,
+				3FE4697BB0432FD7FE9CE84B /* Pods-OrangeConverter.release.xcconfig */,
+				A4D0FCFB42E8D7B67E62A2D9 /* Pods-OrangeConverterTests.debug.xcconfig */,
+				50245CB3A1EAB471BE4D4FBC /* Pods-OrangeConverterTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4363DAD2241D450300B878BD /* Build configuration list for PBXNativeTarget "OrangeConverter" */;
 			buildPhases = (
+				088CB7425C46E7769647CD6D /* [CP] Check Pods Manifest.lock */,
 				4363DAAF241D450100B878BD /* Sources */,
 				4363DAB0241D450100B878BD /* Frameworks */,
 				4363DAB1241D450100B878BD /* Resources */,
+				5CA047A0CBBB76268FFF1D94 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4363DAD5241D450300B878BD /* Build configuration list for PBXNativeTarget "OrangeConverterTests" */;
 			buildPhases = (
+				09A5DF9B7513EECFF2097C36 /* [CP] Check Pods Manifest.lock */,
 				4363DAC5241D450300B878BD /* Sources */,
 				4363DAC6241D450300B878BD /* Frameworks */,
 				4363DAC7241D450300B878BD /* Resources */,
@@ -195,14 +318,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		088CB7425C46E7769647CD6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrangeConverter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09A5DF9B7513EECFF2097C36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrangeConverterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CA047A0CBBB76268FFF1D94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrangeConverter/Pods-OrangeConverter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrangeConverter/Pods-OrangeConverter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrangeConverter/Pods-OrangeConverter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4363DAAF241D450100B878BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4363DAF3241ECEF900B878BD /* CurrencyCell.swift in Sources */,
+				4363DADE241E964F00B878BD /* Completion.swift in Sources */,
+				4363DAEB241EC5E600B878BD /* CurrencyViewModel.swift in Sources */,
+				4363DAEF241ECD3D00B878BD /* CurrencyCellViewModel.swift in Sources */,
+				4363DADA241E8FB600B878BD /* CurrencyService.swift in Sources */,
+				4363DAE6241EBF1B00B878BD /* GenericDataSource.swift in Sources */,
 				4363DABB241D450100B878BD /* ViewController.swift in Sources */,
 				4363DAB7241D450100B878BD /* AppDelegate.swift in Sources */,
+				4363DAE8241EC15300B878BD /* CurrencyDataSource.swift in Sources */,
+				4363DAE0241E9D9600B878BD /* CurrencyRate.swift in Sources */,
 				4363DAB9241D450100B878BD /* SceneDelegate.swift in Sources */,
+				4363DAE4241EBDF600B878BD /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +406,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4363DAF4241ECEF900B878BD /* CurrencyCell.swift in Sources */,
+				4363DADB241E8FBB00B878BD /* CurrencyService.swift in Sources */,
+				4363DAF0241ECD3D00B878BD /* CurrencyCellViewModel.swift in Sources */,
 				4363DACE241D450300B878BD /* OrangeConverterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +559,7 @@
 		};
 		4363DAD3241D450300B878BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01006C731467E66ECA6526B5 /* Pods-OrangeConverter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +578,7 @@
 		};
 		4363DAD4241D450300B878BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FE4697BB0432FD7FE9CE84B /* Pods-OrangeConverter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +597,7 @@
 		};
 		4363DAD6241D450300B878BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D0FCFB42E8D7B67E62A2D9 /* Pods-OrangeConverterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +620,7 @@
 		};
 		4363DAD7241D450300B878BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50245CB3A1EAB471BE4D4FBC /* Pods-OrangeConverterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
