@@ -9,7 +9,8 @@
 import Foundation
 
 
-class CurrencyViewModel {
+class CurrencyViewModel: ErrorHandling {
+    var handleError: ((Error?) -> Void)?
     
     private weak var currencyService: CurrencyService?
     private weak var dataSource: CurrencyDataSource?
@@ -28,8 +29,12 @@ class CurrencyViewModel {
 
         timer?.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { (timer) in
-            currencyService.fetchLatestCurrencies(completion: { date, rates in
+            currencyService.fetchLatestCurrencies(completion: { date, rates, error in
                 DispatchQueue.main.async {
+                    guard error == nil else {
+                        self.handleError?(error)
+                        return
+                    }
                     self.dataSource?.date = String.niceDate(fromTimeStamp: date)
                     self.dataSource?.data.value = rates
                 }
@@ -38,7 +43,11 @@ class CurrencyViewModel {
         timer?.fire()
     }
     
-    deinit {
+    public func stopTimer() {
         timer?.invalidate()
+    }
+    
+    deinit {
+        stopTimer()
     }
 }

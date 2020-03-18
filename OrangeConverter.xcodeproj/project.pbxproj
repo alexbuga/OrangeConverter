@@ -3,14 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3392B51EC650CB96E391E211 /* Pods_OrangeConverterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A5D7FFD612C7F27104E635 /* Pods_OrangeConverterTests.framework */; };
+		4334BDC1241F7C9F008B7811 /* CurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4334BDC0241F7C9F008B7811 /* CurrencyCell.xib */; };
+		4334BDC3241F8385008B7811 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334BDC2241F8385008B7811 /* HistoryViewController.swift */; };
+		4334BDC5241F8769008B7811 /* DateHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4334BDC4241F8769008B7811 /* DateHeader.xib */; };
+		4334BDC7241F87C9008B7811 /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334BDC6241F87C9008B7811 /* DateHeader.swift */; };
+		4334BDCC241F8D96008B7811 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334BDCA241F8D96008B7811 /* HistoryCell.swift */; };
+		4334BDCD241F8D96008B7811 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4334BDCB241F8D96008B7811 /* HistoryCell.xib */; };
+		4334BDCF241F8E67008B7811 /* HistoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334BDCE241F8E67008B7811 /* HistoryDataSource.swift */; };
+		4334BDD0241F8E67008B7811 /* HistoryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334BDCE241F8E67008B7811 /* HistoryDataSource.swift */; };
+		4334BDD2241F8ED2008B7811 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334BDD1241F8ED2008B7811 /* HistoryItem.swift */; };
+		4334BDD3241F8ED2008B7811 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334BDD1241F8ED2008B7811 /* HistoryItem.swift */; };
+		4334BDD5241F9054008B7811 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334BDD4241F9054008B7811 /* HistoryViewModel.swift */; };
+		4334BDD6241F9054008B7811 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334BDD4241F9054008B7811 /* HistoryViewModel.swift */; };
+		4334BDD8241FA40C008B7811 /* HistoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334BDD7241FA40C008B7811 /* HistoryCellViewModel.swift */; };
+		4334BDD9241FA40C008B7811 /* HistoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334BDD7241FA40C008B7811 /* HistoryCellViewModel.swift */; };
+		4334BDDB241FA627008B7811 /* ABChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334BDDA241FA627008B7811 /* ABChartView.swift */; };
+		4334BDDC241FA627008B7811 /* ABChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334BDDA241FA627008B7811 /* ABChartView.swift */; };
 		4363DAB7241D450100B878BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAB6241D450100B878BD /* AppDelegate.swift */; };
 		4363DAB9241D450100B878BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAB8241D450100B878BD /* SceneDelegate.swift */; };
-		4363DABB241D450100B878BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DABA241D450100B878BD /* ViewController.swift */; };
+		4363DABB241D450100B878BD /* CurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DABA241D450100B878BD /* CurrenciesViewController.swift */; };
 		4363DABE241D450100B878BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4363DABC241D450100B878BD /* Main.storyboard */; };
 		4363DAC0241D450300B878BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4363DABF241D450300B878BD /* Assets.xcassets */; };
 		4363DAC3241D450300B878BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4363DAC1241D450300B878BD /* LaunchScreen.storyboard */; };
@@ -20,13 +36,18 @@
 		4363DADE241E964F00B878BD /* Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DADD241E964F00B878BD /* Completion.swift */; };
 		4363DAE0241E9D9600B878BD /* CurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DADF241E9D9600B878BD /* CurrencyRate.swift */; };
 		4363DAE4241EBDF600B878BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAE3241EBDF600B878BD /* Extensions.swift */; };
-		4363DAE6241EBF1B00B878BD /* GenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAE5241EBF1B00B878BD /* GenericDataSource.swift */; };
+		4363DAE6241EBF1B00B878BD /* DynamicDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAE5241EBF1B00B878BD /* DynamicDataSource.swift */; };
 		4363DAE8241EC15300B878BD /* CurrencyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAE7241EC15300B878BD /* CurrencyDataSource.swift */; };
 		4363DAEB241EC5E600B878BD /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAEA241EC5E600B878BD /* CurrencyViewModel.swift */; };
 		4363DAEF241ECD3D00B878BD /* CurrencyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAEE241ECD3D00B878BD /* CurrencyCellViewModel.swift */; };
 		4363DAF0241ECD3D00B878BD /* CurrencyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAEE241ECD3D00B878BD /* CurrencyCellViewModel.swift */; };
 		4363DAF3241ECEF900B878BD /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAF2241ECEF900B878BD /* CurrencyCell.swift */; };
 		4363DAF4241ECEF900B878BD /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4363DAF2241ECEF900B878BD /* CurrencyCell.swift */; };
+		43AC897F24222AAF004B0101 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43AC897E24222AAF004B0101 /* HeaderView.xib */; };
+		43AC898124222BAF004B0101 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC898024222BAF004B0101 /* HeaderView.swift */; };
+		43AC898524223950004B0101 /* ABNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC898424223950004B0101 /* ABNavigationBar.swift */; };
+		43AC89872422587C004B0101 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AC89862422587C004B0101 /* ErrorHandling.swift */; };
+		43C1AEC12422155400229B80 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 43C1AEC02422155400229B80 /* SwiftUICharts */; };
 		FC35D22DD5EE2FEB83FAE8AC /* Pods_OrangeConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD340DFC743D18AFA1E9C4A /* Pods_OrangeConverter.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,10 +65,21 @@
 		01006C731467E66ECA6526B5 /* Pods-OrangeConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeConverter.debug.xcconfig"; path = "Target Support Files/Pods-OrangeConverter/Pods-OrangeConverter.debug.xcconfig"; sourceTree = "<group>"; };
 		2BD340DFC743D18AFA1E9C4A /* Pods_OrangeConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE4697BB0432FD7FE9CE84B /* Pods-OrangeConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeConverter.release.xcconfig"; path = "Target Support Files/Pods-OrangeConverter/Pods-OrangeConverter.release.xcconfig"; sourceTree = "<group>"; };
+		4334BDC0241F7C9F008B7811 /* CurrencyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCell.xib; sourceTree = "<group>"; };
+		4334BDC2241F8385008B7811 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		4334BDC4241F8769008B7811 /* DateHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateHeader.xib; sourceTree = "<group>"; };
+		4334BDC6241F87C9008B7811 /* DateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
+		4334BDCA241F8D96008B7811 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		4334BDCB241F8D96008B7811 /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		4334BDCE241F8E67008B7811 /* HistoryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDataSource.swift; sourceTree = "<group>"; };
+		4334BDD1241F8ED2008B7811 /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		4334BDD4241F9054008B7811 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		4334BDD7241FA40C008B7811 /* HistoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCellViewModel.swift; sourceTree = "<group>"; };
+		4334BDDA241FA627008B7811 /* ABChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABChartView.swift; sourceTree = "<group>"; };
 		4363DAB3241D450100B878BD /* OrangeConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4363DAB6241D450100B878BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4363DAB8241D450100B878BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4363DABA241D450100B878BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4363DABA241D450100B878BD /* CurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewController.swift; sourceTree = "<group>"; };
 		4363DABD241D450100B878BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4363DABF241D450300B878BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4363DAC2241D450300B878BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,11 +92,15 @@
 		4363DADF241E9D9600B878BD /* CurrencyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRate.swift; sourceTree = "<group>"; };
 		4363DAE1241EB92A00B878BD /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4363DAE3241EBDF600B878BD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		4363DAE5241EBF1B00B878BD /* GenericDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataSource.swift; sourceTree = "<group>"; };
+		4363DAE5241EBF1B00B878BD /* DynamicDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicDataSource.swift; sourceTree = "<group>"; };
 		4363DAE7241EC15300B878BD /* CurrencyDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDataSource.swift; sourceTree = "<group>"; };
 		4363DAEA241EC5E600B878BD /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
 		4363DAEE241ECD3D00B878BD /* CurrencyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCellViewModel.swift; sourceTree = "<group>"; };
 		4363DAF2241ECEF900B878BD /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		43AC897E24222AAF004B0101 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		43AC898024222BAF004B0101 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		43AC898424223950004B0101 /* ABNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABNavigationBar.swift; sourceTree = "<group>"; };
+		43AC89862422587C004B0101 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		50245CB3A1EAB471BE4D4FBC /* Pods-OrangeConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeConverterTests.release.xcconfig"; path = "Target Support Files/Pods-OrangeConverterTests/Pods-OrangeConverterTests.release.xcconfig"; sourceTree = "<group>"; };
 		A4D0FCFB42E8D7B67E62A2D9 /* Pods-OrangeConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeConverterTests.debug.xcconfig"; path = "Target Support Files/Pods-OrangeConverterTests/Pods-OrangeConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E4A5D7FFD612C7F27104E635 /* Pods_OrangeConverterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeConverterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC35D22DD5EE2FEB83FAE8AC /* Pods_OrangeConverter.framework in Frameworks */,
+				43C1AEC12422155400229B80 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,13 +160,13 @@
 			isa = PBXGroup;
 			children = (
 				4363DAB6241D450100B878BD /* AppDelegate.swift */,
+				4363DAB8241D450100B878BD /* SceneDelegate.swift */,
 				4363DABF241D450300B878BD /* Assets.xcassets */,
 				4363DAEC241ECB4800B878BD /* Controllers */,
 				4363DAE2241EBDE800B878BD /* Helpers */,
 				4363DAC4241D450300B878BD /* Info.plist */,
 				4363DADC241E953D00B878BD /* Models */,
 				4363DAE1241EB92A00B878BD /* MyPlayground.playground */,
-				4363DAB8241D450100B878BD /* SceneDelegate.swift */,
 				4363DAD8241E8F9800B878BD /* Services */,
 				4363DAED241ECB5E00B878BD /* Storyboards */,
 				4363DAE9241EC5D300B878BD /* ViewModels */,
@@ -160,8 +197,11 @@
 			isa = PBXGroup;
 			children = (
 				4363DADF241E9D9600B878BD /* CurrencyRate.swift */,
-				4363DAE5241EBF1B00B878BD /* GenericDataSource.swift */,
+				4334BDD1241F8ED2008B7811 /* HistoryItem.swift */,
+				4363DAE5241EBF1B00B878BD /* DynamicDataSource.swift */,
+				43AC89862422587C004B0101 /* ErrorHandling.swift */,
 				4363DAE7241EC15300B878BD /* CurrencyDataSource.swift */,
+				4334BDCE241F8E67008B7811 /* HistoryDataSource.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,8 +217,10 @@
 		4363DAE9241EC5D300B878BD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				4363DAEA241EC5E600B878BD /* CurrencyViewModel.swift */,
 				4363DAEE241ECD3D00B878BD /* CurrencyCellViewModel.swift */,
+				4334BDD7241FA40C008B7811 /* HistoryCellViewModel.swift */,
+				4363DAEA241EC5E600B878BD /* CurrencyViewModel.swift */,
+				4334BDD4241F9054008B7811 /* HistoryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -186,7 +228,8 @@
 		4363DAEC241ECB4800B878BD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4363DABA241D450100B878BD /* ViewController.swift */,
+				4363DABA241D450100B878BD /* CurrenciesViewController.swift */,
+				4334BDC2241F8385008B7811 /* HistoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -203,7 +246,16 @@
 		4363DAF1241ECED800B878BD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				43AC898424223950004B0101 /* ABNavigationBar.swift */,
+				4334BDDA241FA627008B7811 /* ABChartView.swift */,
 				4363DAF2241ECEF900B878BD /* CurrencyCell.swift */,
+				4334BDC0241F7C9F008B7811 /* CurrencyCell.xib */,
+				4334BDC6241F87C9008B7811 /* DateHeader.swift */,
+				4334BDC4241F8769008B7811 /* DateHeader.xib */,
+				4334BDCA241F8D96008B7811 /* HistoryCell.swift */,
+				4334BDCB241F8D96008B7811 /* HistoryCell.xib */,
+				43AC898024222BAF004B0101 /* HeaderView.swift */,
+				43AC897E24222AAF004B0101 /* HeaderView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +289,9 @@
 			dependencies = (
 			);
 			name = OrangeConverter;
+			packageProductDependencies = (
+				43C1AEC02422155400229B80 /* SwiftUICharts */,
+			);
 			productName = OrangeConverter;
 			productReference = 4363DAB3241D450100B878BD /* OrangeConverter.app */;
 			productType = "com.apple.product-type.application";
@@ -288,6 +343,9 @@
 				Base,
 			);
 			mainGroup = 4363DAAA241D450100B878BD;
+			packageReferences = (
+				43C1AEBF2422155400229B80 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 4363DAB4241D450100B878BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -303,9 +361,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4334BDC1241F7C9F008B7811 /* CurrencyCell.xib in Resources */,
 				4363DAC3241D450300B878BD /* LaunchScreen.storyboard in Resources */,
 				4363DAC0241D450300B878BD /* Assets.xcassets in Resources */,
+				4334BDC5241F8769008B7811 /* DateHeader.xib in Resources */,
+				4334BDCD241F8D96008B7811 /* HistoryCell.xib in Resources */,
 				4363DABE241D450100B878BD /* Main.storyboard in Resources */,
+				43AC897F24222AAF004B0101 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,18 +449,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4334BDDB241FA627008B7811 /* ABChartView.swift in Sources */,
 				4363DAF3241ECEF900B878BD /* CurrencyCell.swift in Sources */,
+				4334BDD5241F9054008B7811 /* HistoryViewModel.swift in Sources */,
 				4363DADE241E964F00B878BD /* Completion.swift in Sources */,
+				4334BDC7241F87C9008B7811 /* DateHeader.swift in Sources */,
 				4363DAEB241EC5E600B878BD /* CurrencyViewModel.swift in Sources */,
 				4363DAEF241ECD3D00B878BD /* CurrencyCellViewModel.swift in Sources */,
+				4334BDC3241F8385008B7811 /* HistoryViewController.swift in Sources */,
 				4363DADA241E8FB600B878BD /* CurrencyService.swift in Sources */,
-				4363DAE6241EBF1B00B878BD /* GenericDataSource.swift in Sources */,
-				4363DABB241D450100B878BD /* ViewController.swift in Sources */,
+				4363DAE6241EBF1B00B878BD /* DynamicDataSource.swift in Sources */,
+				4363DABB241D450100B878BD /* CurrenciesViewController.swift in Sources */,
+				43AC89872422587C004B0101 /* ErrorHandling.swift in Sources */,
+				4334BDCC241F8D96008B7811 /* HistoryCell.swift in Sources */,
+				43AC898524223950004B0101 /* ABNavigationBar.swift in Sources */,
 				4363DAB7241D450100B878BD /* AppDelegate.swift in Sources */,
+				43AC898124222BAF004B0101 /* HeaderView.swift in Sources */,
 				4363DAE8241EC15300B878BD /* CurrencyDataSource.swift in Sources */,
+				4334BDD2241F8ED2008B7811 /* HistoryItem.swift in Sources */,
 				4363DAE0241E9D9600B878BD /* CurrencyRate.swift in Sources */,
+				4334BDD8241FA40C008B7811 /* HistoryCellViewModel.swift in Sources */,
 				4363DAB9241D450100B878BD /* SceneDelegate.swift in Sources */,
 				4363DAE4241EBDF600B878BD /* Extensions.swift in Sources */,
+				4334BDCF241F8E67008B7811 /* HistoryDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +481,13 @@
 			files = (
 				4363DAF4241ECEF900B878BD /* CurrencyCell.swift in Sources */,
 				4363DADB241E8FBB00B878BD /* CurrencyService.swift in Sources */,
+				4334BDD0241F8E67008B7811 /* HistoryDataSource.swift in Sources */,
+				4334BDD9241FA40C008B7811 /* HistoryCellViewModel.swift in Sources */,
+				4334BDDC241FA627008B7811 /* ABChartView.swift in Sources */,
 				4363DAF0241ECD3D00B878BD /* CurrencyCellViewModel.swift in Sources */,
 				4363DACE241D450300B878BD /* OrangeConverterTests.swift in Sources */,
+				4334BDD3241F8ED2008B7811 /* HistoryItem.swift in Sources */,
+				4334BDD6241F9054008B7811 /* HistoryViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,6 +750,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43C1AEBF2422155400229B80 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43C1AEC02422155400229B80 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43C1AEBF2422155400229B80 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4363DAAB241D450100B878BD /* Project object */;
 }

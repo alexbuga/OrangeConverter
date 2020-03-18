@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16095" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16084.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="OrangeConverter" customModuleProvider="target">
+            <connections>
+                <outlet property="historyButton" destination="Zs2-YA-Qyl" id="qH1-dW-4Vk"/>
+                <outlet property="settingsButton" destination="LW1-06-bkj" id="XRH-1y-Vn8"/>
+                <outlet property="subtitleLabel" destination="yFY-M3-pE9" id="cLH-nZ-ob1"/>
+                <outlet property="titleLabel" destination="cqP-2h-6Nh" id="NM6-mL-Bfs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="518" height="221"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="header-gradient" translatesAutoresizingMaskIntoConstraints="NO" id="QTN-K0-ebP">
+                    <rect key="frame" x="0.0" y="0.0" width="518" height="221"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LW1-06-bkj">
+                    <rect key="frame" x="451" y="87" width="47" height="47"/>
+                    <state key="normal" image="button-settings"/>
+                    <connections>
+                        <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="fnb-Wv-lvk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zs2-YA-Qyl">
+                    <rect key="frame" x="394" y="87" width="47" height="47"/>
+                    <state key="normal" image="button-history"/>
+                    <connections>
+                        <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="jFA-xU-8S0"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mar 01, 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFY-M3-pE9">
+                    <rect key="frame" x="20" y="110.5" width="90.5" height="18.5"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orange Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqP-2h-6Nh">
+                    <rect key="frame" x="20" y="81.5" width="214" height="29"/>
+                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="QTN-K0-ebP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5I9-le-kgj"/>
+                <constraint firstItem="LW1-06-bkj" firstAttribute="leading" secondItem="Zs2-YA-Qyl" secondAttribute="trailing" constant="10" id="6QG-98-15z"/>
+                <constraint firstItem="yFY-M3-pE9" firstAttribute="leading" secondItem="cqP-2h-6Nh" secondAttribute="leading" id="KDz-Vl-hye"/>
+                <constraint firstItem="Vjc-08-kgH" firstAttribute="trailing" secondItem="LW1-06-bkj" secondAttribute="trailing" constant="20" id="LgA-jL-I6l"/>
+                <constraint firstAttribute="trailing" secondItem="QTN-K0-ebP" secondAttribute="trailing" id="NMe-Ip-JpQ"/>
+                <constraint firstItem="cqP-2h-6Nh" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PEE-Wh-ysU"/>
+                <constraint firstItem="cqP-2h-6Nh" firstAttribute="leading" secondItem="Vjc-08-kgH" secondAttribute="leading" constant="20" id="TA8-tl-U6D"/>
+                <constraint firstAttribute="bottom" secondItem="QTN-K0-ebP" secondAttribute="bottom" id="UlH-7c-dAD"/>
+                <constraint firstItem="LW1-06-bkj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="iNK-RZ-Fms"/>
+                <constraint firstItem="Zs2-YA-Qyl" firstAttribute="centerY" secondItem="LW1-06-bkj" secondAttribute="centerY" id="tMt-br-hLh"/>
+                <constraint firstItem="yFY-M3-pE9" firstAttribute="top" secondItem="cqP-2h-6Nh" secondAttribute="bottom" id="x9h-Ui-ZmV"/>
+                <constraint firstItem="QTN-K0-ebP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zxd-g7-2jF"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Vjc-08-kgH"/>
+            <point key="canvasLocation" x="34.782608695652179" y="-312.38839285714283"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button-history" width="47" height="47"/>
+        <image name="button-settings" width="47" height="47"/>
+        <image name="header-gradient" width="375" height="175"/>
+    </resources>
+</document>

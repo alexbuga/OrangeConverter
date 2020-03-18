@@ -8,6 +8,7 @@ target 'OrangeConverter' do
   # Pods for OrangeConverter
 
     pod 'Alamofire', '~> 5.0'
+    pod 'Charts'
 
   target 'OrangeConverterTests' do
     inherit! :search_paths

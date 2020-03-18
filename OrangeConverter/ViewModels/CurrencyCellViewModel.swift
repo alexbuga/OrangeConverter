@@ -16,6 +16,9 @@ class CurrencyCellViewModel {
             return "\(String.flag(forCountryCode: rate.currency)) \(rate.currency)"
         }
     }
+    var currencyDescription: String {
+        return Locale.current.localizedString(forCurrencyCode: rate.currency)?.capitalized ?? ""
+    }
     var currencyRate: String {
         get {
             let formatter = NumberFormatter()
