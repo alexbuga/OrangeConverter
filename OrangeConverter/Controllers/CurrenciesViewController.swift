@@ -113,6 +113,7 @@ extension CurrenciesViewController: HeaderViewDelegate {
 extension CurrenciesViewController {
     func showChangeDefaultCurrency() {
         let currenciesAlert = UIAlertController(title: "Choose Default Currency", message: "Current currency: \(CurrencyService.baseCurrency)", preferredStyle: .actionSheet)
+        currenciesAlert.view.tintColor = UIColor(named: "DarkPurple")
         for currency in CurrencyService.currencies {
             let action = UIAlertAction(title: "\(String.flag(forCountryCode: currency)) \(currency)", style: .default, handler: { _ in
                 CurrencyService.baseCurrency = currency
