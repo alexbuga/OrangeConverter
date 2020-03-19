@@ -1,6 +1,0 @@
-framework module Pods_OrangeConverterTests {
-  umbrella header "Pods-OrangeConverterTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
