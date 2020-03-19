@@ -41,12 +41,20 @@ class CurrencyService {
         }
     }
     
+    ///
+    static var refreshInterval: Double {
+        get {
+            let value = UserDefaults.standard.double(forKey: "refreshInterval")
+            return value == 0 ? 3 : value
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "refreshInterval")
+        }
+    }
+    
     //MARK: API URL
     let latestCurrenciesURL = "https://api.exchangeratesapi.io/latest"
     let historyURL = "https://api.exchangeratesapi.io/history"
-    
-    //MARK: Strings
-    let genericError = "An unexpected error occurred."
     
     ///Fetches the latest currencies from the API
     ///- Parameter completion: A completion block that gets called with the date and list of currency rates provided by the API
@@ -68,8 +76,8 @@ class CurrencyService {
                 }
                 
                 let rates = ratesDict
-                    .compactMap {CurrencyRate(currency: $0.key, rate: $0.value)}
-                    .sorted { $0.currency < $1.currency }
+                    .compactMap {CurrencyRate(currencyCode: $0.key, rate: $0.value)}
+                    .sorted { $0.currencyCode < $1.currencyCode }
 
                 //Set API list of currencies in UserDefaults for further reference in Settings.
                 CurrencyService.currencies = ratesDict.keys.sorted()
@@ -107,15 +115,17 @@ class CurrencyService {
                 var results = [HistoryItem]()
                 
                 //Create a history item for each day. If only time travel would be possible 🤔
-                currencies.forEach { currency in
-                    results.append(HistoryItem(currencyCode: currency, history: [:]))
+                for currency in currencies {
+                    if let item = HistoryItem(currencyCode: currency) {
+                        results.append(item)
+                    }
                 }
                 
                 for day in daysDict {
                     for item in day.value {
                         //Get each history item for each day and put the mofo in its right place 😆
                         let historyItem = results.first {$0.currencyCode == item.key}!
-                        historyItem.history[day.key] = CurrencyRate(currency: item.key, rate: item.value)
+                        historyItem.history[day.key] = CurrencyRate(currencyCode: item.key, rate: item.value)
                     }
                 }
                 completion((results, nil))

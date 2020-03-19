@@ -22,20 +22,32 @@
                                     <constraint firstAttribute="height" constant="200" id="EGN-iw-Pn7"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZNF-QA-iu5">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m65-nm-AuK" userLabel="MaskView">
                                 <rect key="frame" x="0.0" y="150" width="414" height="746"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZNF-QA-iu5">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="746"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZNF-QA-iu5" secondAttribute="trailing" id="RKt-d7-uF7"/>
+                                    <constraint firstItem="ZNF-QA-iu5" firstAttribute="top" secondItem="m65-nm-AuK" secondAttribute="top" id="Z0i-l5-i6m"/>
+                                    <constraint firstItem="ZNF-QA-iu5" firstAttribute="bottom" secondItem="m65-nm-AuK" secondAttribute="bottom" id="eIx-UV-4cf"/>
+                                    <constraint firstItem="ZNF-QA-iu5" firstAttribute="leading" secondItem="m65-nm-AuK" secondAttribute="leading" id="y56-j5-pc5"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Una-0J-jJp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3GO-cK-dIK"/>
-                            <constraint firstItem="ZNF-QA-iu5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6bs-ur-Gez"/>
                             <constraint firstAttribute="top" secondItem="Una-0J-jJp" secondAttribute="top" id="AMN-GU-39J"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZNF-QA-iu5" secondAttribute="trailing" id="OmY-aN-R2N"/>
-                            <constraint firstItem="ZNF-QA-iu5" firstAttribute="top" secondItem="Una-0J-jJp" secondAttribute="bottom" constant="-50" id="XiR-oX-xyD"/>
-                            <constraint firstItem="ZNF-QA-iu5" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="eQc-pQ-vhZ"/>
+                            <constraint firstItem="m65-nm-AuK" firstAttribute="top" secondItem="Una-0J-jJp" secondAttribute="bottom" constant="-50" id="MRd-UX-xYQ"/>
+                            <constraint firstItem="m65-nm-AuK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XDv-zO-XKY"/>
                             <constraint firstAttribute="trailing" secondItem="Una-0J-jJp" secondAttribute="trailing" id="o16-mi-gQw"/>
+                            <constraint firstItem="m65-nm-AuK" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="qCL-f2-EWT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m65-nm-AuK" secondAttribute="trailing" id="tIA-v7-1Ng"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -86,7 +98,6 @@
         <!--Navigation Controller-->
         <scene sceneID="pBL-Ha-PSf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XWC-bb-gZo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Af8-Jr-9AP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YON-ym-xHP" customClass="ABNavigationBar" customModule="OrangeConverter" customModuleProvider="target">
@@ -107,6 +118,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZiF-6S-6TY"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XWC-bb-gZo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="121.875"/>
         </scene>

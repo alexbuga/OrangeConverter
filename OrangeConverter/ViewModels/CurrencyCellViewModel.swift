@@ -13,11 +13,11 @@ class CurrencyCellViewModel {
     private var rate: CurrencyRate!
     var currencyCode: String {
         get {
-            return "\(String.flag(forCountryCode: rate.currency)) \(rate.currency)"
+            return "\(String.flag(forCountryCode: rate.currencyCode)) \(rate.currencyCode)"
         }
     }
     var currencyDescription: String {
-        return Locale.current.localizedString(forCurrencyCode: rate.currency)?.capitalized ?? ""
+        return Locale.current.localizedString(forCurrencyCode: rate.currencyCode)?.capitalized ?? ""
     }
     var currencyRate: String {
         get {

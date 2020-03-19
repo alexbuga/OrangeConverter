@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable final class ABChartView: UIView {
+final class ABChartView: UIView {
     enum ChartMode {
         case Bar
         case Graph

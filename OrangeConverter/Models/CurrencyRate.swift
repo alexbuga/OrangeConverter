@@ -8,12 +8,22 @@
 
 import Foundation
 
-class CurrencyRate {
-    var currency: String
+class CurrencyRate: NSObject {
+    var currencyCode: String
     var rate: Double
     
-    init(currency: String, rate: Double) {
-        self.currency = currency
-        self.rate = rate
+    init?(currencyCode: String, rate: Double) {
+        for char in currencyCode {
+            if char.isNumber || !char.isUppercase {
+                return nil
+            }
+        }
+        
+        if currencyCode.count == 3 && rate > 0 {
+            self.currencyCode = currencyCode
+            self.rate = rate
+        } else {
+            return nil
+        }
     }
 }

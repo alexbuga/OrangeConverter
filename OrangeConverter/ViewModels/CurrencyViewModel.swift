@@ -24,11 +24,8 @@ class CurrencyViewModel: ErrorHandling {
     public func fetchLatestCurrencies() {
         guard let currencyService = currencyService else {return}
 
-        let defaultInterval = UserDefaults.standard.double(forKey: "refreshInterval")
-        let interval = defaultInterval == 0 ? 3 : defaultInterval
-
         timer?.invalidate()
-        timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { (timer) in
+        timer = Timer.scheduledTimer(withTimeInterval: CurrencyService.refreshInterval, repeats: true) { (timer) in
             currencyService.fetchLatestCurrencies(completion: { date, rates, error in
                 DispatchQueue.main.async {
                     guard error == nil else {

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftUICharts
 
 class HistoryCell: UITableViewCell {
 

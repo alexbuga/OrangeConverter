@@ -16,6 +16,7 @@ class CurrenciesViewController: UIViewController {
 
     @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var tableView: UITableView!
+    var gradient: CAGradientLayer!
 
     var currencyDataSource: CurrencyDataSource!
     var currencyViewModel: CurrencyViewModel!
@@ -37,6 +38,11 @@ class CurrenciesViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         currencyViewModel.stopTimer()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        gradient.frame = tableView.superview?.bounds ?? .zero
     }
     
     func updateHeaderText() {
@@ -72,7 +78,16 @@ class CurrenciesViewController: UIViewController {
         tableView.layer.shadowOpacity = 0.1
         tableView.layer.shadowRadius = 10
         tableView.layer.shadowOffset.height = 2
-
+        
+        //Top Mask
+        let mask = UIView(frame: tableView.superview?.bounds ?? .zero)
+        mask.isUserInteractionEnabled = false
+        gradient = CAGradientLayer()
+        gradient.frame = mask.bounds
+        gradient.colors = [UIColor.black.withAlphaComponent(0).cgColor, UIColor.black.cgColor]
+        gradient.locations = [0, 0.02]
+        mask.layer.addSublayer(gradient)
+        tableView.superview?.mask = mask
     }
     
     deinit {
@@ -97,7 +112,7 @@ extension CurrenciesViewController: HeaderViewDelegate {
 //MARK: Settings section
 extension CurrenciesViewController {
     func showChangeDefaultCurrency() {
-        let currenciesAlert = UIAlertController(title: "Choose Default Currency", message: nil, preferredStyle: .actionSheet)
+        let currenciesAlert = UIAlertController(title: "Choose Default Currency", message: "Current currency: \(CurrencyService.baseCurrency)", preferredStyle: .actionSheet)
         for currency in CurrencyService.currencies {
             let action = UIAlertAction(title: "\(String.flag(forCountryCode: currency)) \(currency)", style: .default, handler: { _ in
                 CurrencyService.baseCurrency = currency
@@ -115,11 +130,13 @@ extension CurrenciesViewController {
         let intervalAlert = UIAlertController(title: "Refresh Interval", message: nil, preferredStyle: .actionSheet)
         intervalAlert.view.tintColor = UIColor(named: "DarkPurple")
         
-        [3, 5, 15].forEach { interval in
-            intervalAlert.addAction(UIAlertAction(title: "\(interval) seconds", style: .default, handler: { _ in
+        [3.0, 5.0, 15.0].forEach { interval in
+            let action = UIAlertAction(title: "\(Int(interval)) seconds", style: .default, handler: { _ in
                 UserDefaults.standard.set(interval, forKey: "refreshInterval")
                 self.currencyViewModel.fetchLatestCurrencies()
-            }))
+            })
+            action.setValue(CurrencyService.refreshInterval == interval, forKey: "checked")
+            intervalAlert.addAction(action)
         }
         intervalAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(intervalAlert, animated: true, completion: nil)
